@@ -1,162 +1,177 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
-.pdm.toml
-.pdm-python
-.pdm-build/
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "7e11eed4-7508-4b96-8b17-d05d647767b8",
+   "metadata": {},
+   "source": [
+    "# Laboratory Work 1\n",
+    "## Topic: Jupyter Notebook Basics\n",
+    "## Goal: Learning the specifics of using Python language in Jupyter Notebook."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fd34f148-76d8-4c44-8ba9-7cab77863830",
+   "metadata": {},
+   "source": [
+    "1. **Theoretical Information**\n",
+    "You can refer to the theoretical background in Lecture 1 - \n",
+    "[Lecture 1](https://github.com/svniko/data_processing/blob/main/Lectures/Lecture_1.pdf)\n",
+    "\n",
+    "2. **Assignments**\n",
+    "- Install Anaconda.\n",
+    "- Create an environment for Python 3.\n",
+    "- Change the Jupyter start-up folder.\n",
+    "- For the assigned country, format information using **Markdown** and **HTML** as per the instructions.\n",
+    "- Implement an algorithm based on the individual task from Table 1."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "61513a11-46dd-4e89-9db9-b04c6c8b3fd0",
+   "metadata": {},
+   "source": [
+    "### Jordan Country Profile\n",
+    "\n",
+    "<div style=\"border: 3px solid #000000; padding: 15px; background-color: #f0f8ff;\">\n",
+    "\n",
+    "## Area and Population\n",
+    "\n",
+    "- **<span style=\"color:blue;\">Area</span>**: <u>89,342 square kilometers</u>\n",
+    "- **<span style=\"color:green;\">Population</span>**: ~10.2 million (2023)\n",
+    "\n",
+    "## Government\n",
+    "- **<span style=\"color:red;\">Type</span>**: *Constitutional Monarchy*\n",
+    "- **<span style=\"color:purple;\">Capital</span>**: **Amman**\n",
+    "\n",
+    "## Celebrities\n",
+    "1. **King Abdullah II** – The reigning monarch.\n",
+    "2. **Queen Rania** – Global humanitarian and philanthropist.\n",
+    "\n",
+    "## Jordan Flag\n",
+    "\n",
+    "<div style=\"border: 2px solid #000; padding: 10px; background-color: #e0ffe0;\">\n",
+    "    <svg width=\"300\" height=\"200\">\n",
+    "      <rect width=\"300\" height=\"100\" style=\"fill:black;\" />\n",
+    "      <rect y=\"100\" width=\"300\" height=\"100\" style=\"fill:white;\" />\n",
+    "      <polygon points=\"0,0 150,100 0,200\" style=\"fill:red;\" />\n",
+    "      <circle cx=\"50\" cy=\"100\" r=\"20\" style=\"fill:white;\" />\n",
+    "    </svg>\n",
+    "</div>\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f78f7335-e2a5-456f-b688-4e0c55c0cdee",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "### Table of Information\n",
+    "\n",
+    "| **Category**            | **Information**                                |\n",
+    "|-------------------------|------------------------------------------------|\n",
+    "| <span style=\"color:blue;\">**Area**</span> | 89,342 sq km                               |\n",
+    "| <span style=\"color:green;\">**Population**</span> | ~10.2 million                                  |\n",
+    "| <span style=\"color:red;\">**Capital**</span> | Amman                                  |\n",
+    "| **Natural Wonders**      | Petra, Wadi Rum, Dead Sea                      |\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f634ab87-393d-4c35-9990-a781a976d04f",
+   "metadata": {},
+   "source": [
+    "## [Learn More About Jordan](https://en.wikipedia.org/wiki/Jordan)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "61513a11-46dd-4e89-9db9-b04c6c8b3fd0",
+   "metadata": {},
+   "source": [
+    "<h3><center><b>Progress of Work</b></center></h3>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "76d2bde6-1d1d-4882-8ddf-7576a8d2aa97",
+   "metadata": {},
+   "source": [
+    "<h4><b><u>Assignment 5</u></b></h4>\n",
+    "<b>Task:</b> Enter two integers a and b. Find all primes in the interval [a, b]."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "8847877f-fadb-4c89-bf44-8272dfa1a6f9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Primes between 3 and 15: [3, 5, 7, 11, 13]\n",
+      "Primes between 6 and 24: [7, 11, 13, 17, 19, 23]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Function to check if a number is prime\n",
+    "def is_prime(n):\n",
+    "    if n <= 1:\n",
+    "        return False\n",
+    "    for i in range(2, int(n ** 0.5) + 1):\n",
+    "        if n % i == 0:\n",
+    "            return False\n",
+    "    return True\n",
+    "\n",
+    "# Function to find all primes in the interval [a, b]\n",
+    "def find_primes_in_interval(a, b):\n",
+    "    primes = []\n",
+    "    for num in range(a, b + 1):\n",
+    "        if is_prime(num):\n",
+    "            primes.append(num)\n",
+    "    return primes\n",
+    "\n",
+    "# Test cases for the prime number finder\n",
+    "def test_task_6():\n",
+    "    print(f\"Primes between 3 and 15: {find_primes_in_interval(3, 15)}\")\n",
+    "    print(f\"Primes between 6 and 24: {find_primes_in_interval(6, 24)}\")\n",
+    "\n",
+    "# Running the test cases\n",
+    "test_task_6()\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "94db9390-8a22-420e-8dfe-f91ebe1dfcd7",
+   "metadata": {},
+   "source": [
+    "<h4><b>Conclusion:</b> During this laboratory work, I learned how to work with Jupyter Notebook, format content using Markdown, and implement algorithms in Python. Specifically, I created a function to find prime numbers in a given interval.</h4>"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
